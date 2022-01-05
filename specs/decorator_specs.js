@@ -41,11 +41,14 @@ describe('Paint', function(){
     assert.strictEqual(actual,10)
     })
 
-
-
-
-
-    it('it should be able to check if its empty')
-    it('it should be able to empty itself of paint')
+    it('it should be able to check if its empty',function(){
+        const actual = paint.isEmpty()
+        assert.strictEqual(actual,false)
+    })
+    it('it should be able to empty itself of paint',function(){
+        paint.setEmpty()
+        const actual = paint.isEmpty()
+        assert.strictEqual(actual,true)
+    })
 })
 })
