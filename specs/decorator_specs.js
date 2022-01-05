@@ -16,7 +16,10 @@ describe ('Room',function(){
     })
 
 
-    it('it should start not painted')
+    it('it should start not painted',function(){
+        const actual = room.isPainted()
+        assert.strictEqual(actual, false)
+    })
 
     it('it should be able to be painted')
 })
