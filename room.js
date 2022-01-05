@@ -5,5 +5,8 @@ const Room = function(area){
 Room.prototype.isPainted = function(){
     return this.painted
 }
+Room.prototype.paint = function(){
+    this.painted = true
+}
 
 module.exports = Room
